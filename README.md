@@ -6,6 +6,12 @@
 
 JinXSuper AI Chat Interface is a state-of-the-art, high-performance, and visually stunning Multi-Modal AI interface. Inspired by modern design systems like Vercel's v0, it features a pitch-black minimalist aesthetic, fluid glassmorphism, and hardware-accelerated animations.
 
+<div align="center">
+
+![JinXSuper Interface](./screenshots/interface.png)
+
+</div>
+
 ## ✨ Core Features
 
 - **Fluid Glass UI**: Hardware-accelerated translucency using `backdrop-filter`.
@@ -76,34 +82,13 @@ npm start
 
 </div>
 
-### 🔧 Configuration
-
-Create a `.env.local` file in the root directory:
-
-```env
-# API Configuration
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-
-# AI Model Configuration
-NEXT_PUBLIC_MODEL=claude-3-sonnet
-
-# Feature Flags
-NEXT_PUBLIC_ENABLE_VOICE=true
-NEXT_PUBLIC_ENABLE_FILE_UPLOAD=true
-```
-
-### 📝 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run build` | Build for production |
-| `npm start` | Start production server |
-| `npm run lint` | Run ESLint checks |
-| `npm run type-check` | TypeScript type checking |
-| `npm run format` | Format code with Prettier |
-
 ## ✨ Features Deep Dive
+
+<div align="center">
+
+![Code Example](./screenshots/code-example.png)
+
+</div>
 
 <table>
 <tr>
@@ -167,25 +152,6 @@ NEXT_PUBLIC_ENABLE_FILE_UPLOAD=true
 2. Connect GitHub account
 3. Vercel auto-deploys on every push
 
-### Docker Deployment
-
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-Build and run:
-```bash
-docker build -t jinxsuper-chat .
-docker run -p 3000:3000 jinxsuper-chat
-```
-
 ### Manual Deployment
 
 ```bash
@@ -198,51 +164,7 @@ npm start
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Development Guidelines
-
-- Follow the existing code style
-- Add tests for new features
-- Update documentation
-- Use conventional commits
-- Ensure no console warnings/errors
-
-## 📊 Performance Metrics
-
-| Metric | Target | Status |
-|--------|--------|--------|
-| Lighthouse Score | 90+ | ✅ |
-| Core Web Vitals | All Green | ✅ |
-| Bundle Size | < 200KB | ✅ |
-| First Paint | < 1s | ✅ |
-| Time to Interactive | < 2s | ✅ |
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Issue: Port 3000 already in use**
-```bash
-npm run dev -- -p 3001
-```
-
-**Issue: Node modules corrupted**
-```bash
-rm -rf node_modules package-lock.json
-npm install
-```
-
-**Issue: TypeScript errors**
-```bash
-npm run type-check -- --noEmit
-```
+We welcome contributions! Fork the repository, create a feature branch, and open a Pull Request.
 
 ## 📚 Documentation
 
@@ -251,18 +173,6 @@ npm run type-check -- --noEmit
 - [Tailwind CSS v4](https://tailwindcss.com)
 - [Zustand Store Management](https://github.com/pmndrs/zustand)
 - [Framer Motion Docs](https://www.framer.com/motion/)
-
-## 📞 Support & Contact
-
-<div align="center">
-
-| Platform | Link |
-|----------|------|
-| **GitHub Issues** | [Report Bug](https://github.com/JinXSuper/jinxsuper-ai-chat-interface/issues) |
-| **Twitter** | [@JinXSuper](https://twitter.com/JinXSuper) |
-| **Email** | contact@jinxsuper.dev |
-
-</div>
 
 ## 📄 License
 
