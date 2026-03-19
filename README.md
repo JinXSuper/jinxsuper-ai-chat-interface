@@ -8,7 +8,10 @@ JinXSuper AI Chat Interface is a state-of-the-art, high-performance, and visuall
 
 <div align="center">
 
-![JinXSuper Interface](./screenshots/interface.png)
+![JinXSuper Interface](/public/preview/preview-1.png)
+![JinXSuper Interface](/public/preview/preview-2.png)
+![JinXSuper Interface](/public/preview/preview-3.png)
+![JinXSuper Interface](/public/preview/preview-4.png)
 
 </div>
 
@@ -86,7 +89,7 @@ npm start
 
 <div align="center">
 
-![Code Example](./screenshots/code-example.png)
+![Code Example](/public/preview/preview-3.png)
 
 </div>
 
