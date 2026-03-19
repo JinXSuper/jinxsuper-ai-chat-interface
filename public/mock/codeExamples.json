@@ -1,0 +1,20 @@
+[
+  {
+    "id": "code_1",
+    "language": "typescript",
+    "title": "Generic API Fetcher",
+    "code": "async function fetchAPI<T>(endpoint: string, options?: RequestInit): Promise<T> {\n  const response = await fetch(`${BASE_URL}${endpoint}`, {\n    headers: {\n      'Content-Type': 'application/json',\n      ...options?.headers,\n    },\n    ...options,\n  });\n\n  if (!response.ok) {\n    throw new Error(`API Error: ${response.status} ${response.statusText}`);\n  }\n\n  return response.json();\n}"
+  },
+  {
+    "id": "code_2",
+    "language": "python",
+    "title": "Data Pipeline",
+    "code": "import pandas as pd\nfrom typing import List, Dict\n\ndef process_pipeline(data: List[Dict]) -> pd.DataFrame:\n    \"\"\"Process raw data through transformation pipeline.\"\"\"\n    df = pd.DataFrame(data)\n    \n    # Clean and transform\n    df = df.dropna(subset=['timestamp', 'value'])\n    df['timestamp'] = pd.to_datetime(df['timestamp'])\n    df['value'] = df['value'].astype(float)\n    \n    # Aggregate by day\n    daily = df.resample('D', on='timestamp').agg({\n        'value': ['mean', 'sum', 'count']\n    })\n    \n    return daily"
+  },
+  {
+    "id": "code_3",
+    "language": "rust",
+    "title": "Concurrent Task Runner",
+    "code": "use tokio::task;\nuse std::sync::Arc;\n\nasync fn run_tasks(items: Vec<String>) -> Vec<Result<String, String>> {\n    let results = Arc::new(tokio::sync::Mutex::new(Vec::new()));\n    let mut handles = vec![];\n\n    for item in items {\n        let results = Arc::clone(&results);\n        let handle = task::spawn(async move {\n            let result = process_item(&item).await;\n            results.lock().await.push(result);\n        });\n        handles.push(handle);\n    }\n\n    for handle in handles {\n        handle.await.unwrap();\n    }\n\n    Arc::try_unwrap(results).unwrap().into_inner()\n}"
+  }
+]

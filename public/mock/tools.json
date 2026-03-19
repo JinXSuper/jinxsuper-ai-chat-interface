@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tool_1",
+    "name": "Code Executor",
+    "description": "Run code snippets in a sandboxed environment",
+    "icon": "play",
+    "category": "development"
+  },
+  {
+    "id": "tool_2",
+    "name": "Web Search",
+    "description": "Search the web for relevant information",
+    "icon": "search",
+    "category": "research"
+  },
+  {
+    "id": "tool_3",
+    "name": "Image Generator",
+    "description": "Generate images from text descriptions",
+    "icon": "image",
+    "category": "creative"
+  },
+  {
+    "id": "tool_4",
+    "name": "File Manager",
+    "description": "Upload and manage files for analysis",
+    "icon": "folder",
+    "category": "utility"
+  },
+  {
+    "id": "tool_5",
+    "name": "API Tester",
+    "description": "Test and debug API endpoints",
+    "icon": "globe",
+    "category": "development"
+  },
+  {
+    "id": "tool_6",
+    "name": "Regex Debugger",
+    "description": "Build and test regular expressions",
+    "icon": "regex",
+    "category": "development"
+  }
+]

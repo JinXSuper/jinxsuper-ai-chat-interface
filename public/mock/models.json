@@ -1,0 +1,56 @@
+[
+  {
+    "id": "claude-opus",
+    "name": "Claude 3 Opus",
+    "provider": "Anthropic",
+    "badge": "Fastest",
+    "speedMs": 1200,
+    "icon": "brain",
+    "color": "#d97706"
+  },
+  {
+    "id": "claude-sonnet",
+    "name": "Claude 3 Sonnet",
+    "provider": "Anthropic",
+    "badge": "Balanced",
+    "speedMs": 1800,
+    "icon": "target",
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "claude-haiku",
+    "name": "Claude 3 Haiku",
+    "provider": "Anthropic",
+    "badge": "Economy",
+    "speedMs": 800,
+    "icon": "book-open",
+    "color": "#06b6d4"
+  },
+  {
+    "id": "gpt-4",
+    "name": "ChatGPT 4 Turbo",
+    "provider": "OpenAI",
+    "badge": "Premium",
+    "speedMs": 2500,
+    "icon": "sparkles",
+    "color": "#10b981"
+  },
+  {
+    "id": "grok-2",
+    "name": "Grok 2",
+    "provider": "xAI",
+    "badge": "Latest",
+    "speedMs": 1500,
+    "icon": "zap",
+    "color": "#ef4444"
+  },
+  {
+    "id": "gemini-pro",
+    "name": "Gemini Pro",
+    "provider": "Google",
+    "badge": "Advanced",
+    "speedMs": 2000,
+    "icon": "circle-dot",
+    "color": "#3b82f6"
+  }
+]

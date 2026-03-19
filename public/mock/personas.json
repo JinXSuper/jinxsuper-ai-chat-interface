@@ -1,0 +1,46 @@
+{
+  "personas": [
+    {
+      "modelId": "claude-opus",
+      "name": "Claude",
+      "style": "analytical",
+      "canGenerateCharts": true,
+      "responsePatterns": ["text", "code", "chart", "mixed"]
+    },
+    {
+      "modelId": "claude-sonnet",
+      "name": "Claude",
+      "style": "detailed",
+      "canGenerateCharts": true,
+      "responsePatterns": ["text", "code", "chart", "mixed"]
+    },
+    {
+      "modelId": "claude-haiku",
+      "name": "Claude",
+      "style": "concise",
+      "canGenerateCharts": false,
+      "responsePatterns": ["text", "code"]
+    },
+    {
+      "modelId": "gpt-4",
+      "name": "GPT-4",
+      "style": "detailed",
+      "canGenerateCharts": true,
+      "responsePatterns": ["text", "code", "chart", "mixed"]
+    },
+    {
+      "modelId": "grok-2",
+      "name": "Grok",
+      "style": "creative",
+      "canGenerateCharts": true,
+      "responsePatterns": ["text", "code", "chart", "mixed"]
+    },
+    {
+      "modelId": "gemini-pro",
+      "name": "Gemini",
+      "style": "analytical",
+      "canGenerateCharts": true,
+      "responsePatterns": ["text", "code", "chart", "mixed"]
+    }
+  ]
+}

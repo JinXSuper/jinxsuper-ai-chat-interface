@@ -1,0 +1,80 @@
+{
+  "charts": [
+    {
+      "id": "chart_revenue",
+      "chartType": "line",
+      "title": "Monthly Revenue Trend",
+      "data": [
+        { "month": "Jan", "revenue": 4200, "target": 4000 },
+        { "month": "Feb", "revenue": 5800, "target": 4500 },
+        { "month": "Mar", "revenue": 5200, "target": 5000 },
+        { "month": "Apr", "revenue": 7100, "target": 5500 },
+        { "month": "May", "revenue": 6800, "target": 6000 },
+        { "month": "Jun", "revenue": 8500, "target": 6500 }
+      ],
+      "config": {
+        "xKey": "month",
+        "yKey": "revenue",
+        "color": "#8b5cf6",
+        "showGrid": true,
+        "showLegend": true
+      }
+    },
+    {
+      "id": "chart_lang",
+      "chartType": "pie",
+      "title": "Programming Language Usage",
+      "data": [
+        { "name": "TypeScript", "value": 35 },
+        { "name": "Python", "value": 25 },
+        { "name": "JavaScript", "value": 20 },
+        { "name": "Rust", "value": 10 },
+        { "name": "Go", "value": 10 }
+      ],
+      "config": {
+        "xKey": "name",
+        "yKey": "value",
+        "colors": ["#8b5cf6", "#06b6d4", "#f59e0b", "#ef4444", "#10b981"]
+      }
+    },
+    {
+      "id": "chart_performance",
+      "chartType": "area",
+      "title": "API Response Time (ms)",
+      "data": [
+        { "time": "00:00", "p50": 120, "p95": 350, "p99": 800 },
+        { "time": "04:00", "p50": 95, "p95": 280, "p99": 650 },
+        { "time": "08:00", "p50": 180, "p95": 450, "p99": 1200 },
+        { "time": "12:00", "p50": 220, "p95": 520, "p99": 1500 },
+        { "time": "16:00", "p50": 195, "p95": 480, "p99": 1100 },
+        { "time": "20:00", "p50": 140, "p95": 380, "p99": 900 }
+      ],
+      "config": {
+        "xKey": "time",
+        "yKey": "p50",
+        "color": "#3b82f6",
+        "showGrid": true
+      }
+    },
+    {
+      "id": "chart_scatter",
+      "chartType": "scatter",
+      "title": "Code Complexity vs Bug Count",
+      "data": [
+        { "complexity": 5, "bugs": 2 },
+        { "complexity": 12, "bugs": 5 },
+        { "complexity": 8, "bugs": 3 },
+        { "complexity": 25, "bugs": 12 },
+        { "complexity": 18, "bugs": 8 },
+        { "complexity": 30, "bugs": 15 },
+        { "complexity": 15, "bugs": 6 },
+        { "complexity": 22, "bugs": 10 }
+      ],
+      "config": {
+        "xKey": "complexity",
+        "yKey": "bugs",
+        "color": "#ef4444"
+      }
+    }
+  ]
+}
