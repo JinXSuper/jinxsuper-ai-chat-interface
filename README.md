@@ -88,11 +88,6 @@ npm start
 ## ✨ Features Deep Dive
 
 <div align="center">
-
-![Code Example](/public/preview/preview-3.png)
-
-</div>
-
 <table>
 <tr>
 <td width="50%">
